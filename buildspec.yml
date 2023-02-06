@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - git config --global credential.helper 'store'
+      - echo "https://$TOKEN:x-oauth-basic@github.com/" > ~/.git-credentials
+      - sed -i "s|#develop|#$GIT_BRANCH|g" package.json
+      - npm install --verbose
+  pre_build:
+    commands:
+      - echo checking code quality...
+  build:
+    commands:
+      - npm start
+      - npm test
+  post_build:
+    commands:
+      - echo PostBuild
+artifacts:
+  files:
+    - '**/*'

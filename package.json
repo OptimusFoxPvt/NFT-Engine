@@ -1,0 +1,50 @@
+{
+  "name": "nft-engine",
+  "scripts": {
+    "start": "npx hardhat run ./src --network primary",
+    "test": "npx hardhat test",
+    "lint": "npx eslint -c .eslintrc.json --ext .js src/ --fix"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts-upgradeable": "^4.4.0",
+    "@openzeppelin/hardhat-upgrades": "^1.12.0",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "hardhat": "^2.7.0",
+    "hardhat-etherscan": "^1.0.1",
+    "pino": "^7.8.0",
+    "web3": "^1.6.1"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.3",
+    "aws-sdk": "^2.1046.0",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.2",
+    "jest": "^27.2.4",
+    "jest-junit": "^13.0.0"
+  },
+  "author": "OptimusFox <info@optimusfox.com>",
+  "contributors": [
+    "Rosheel Baig <rosheelbaig@gmail.com>",
+    "Muhammad Waqas <waqasaslam445586@gmail.com>"
+  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:OptimusFoxPvt/NFT-Engine.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OptimusFoxPvt/NFT-Engine/issues"
+  },
+  "homepage": "https://github.com/OptimusFoxPvt/NFT-Engine#readme"
+}
