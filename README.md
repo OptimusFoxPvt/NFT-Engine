@@ -2,6 +2,10 @@
 ## NFT-Engine (ERC721 & ERC1155) 
 The NFT-Engine EC721 & ERC1155 are well tested using hardhat framework to enable the the contracts-upgradeable. This repository is based on the NFT-Engine nft smart contracts & new NFT lazy minting technique by following the below mentioned tech stack.
 
+## Developed By
+
+- [@OPTIMUSFOX](https://www.github.com/OptimusFoxPvt)
+
 ## Deployment
 ```
 Using hardhat.
